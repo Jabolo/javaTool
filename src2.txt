@@ -1,0 +1,30 @@
+--i C:\Users\michal\IdeaProjects\projectASM\target\ASMinterpeter_Michal_Jablonski-jar-with-dependencies.jar
+--list-packages
+--list-classes
+--list-methods testPack.Inside.xClass
+--list-fields testPack.Inside.xClass
+--list-ctors testPack.Inside.xClass
+--add-package testPack.1thatsNewPackage
+--add-package testPack.2thatsNewPackage
+--add-class testPack.1thatsNewPackage.newClass3
+--add-class testPack.2thatsNewPackage.newClass4
+--remove-package testPack.1thatsNewPackage
+--add-class testPack.Inside.newClass
+--add-class testPack.Inside.newClass2
+--add-interface testPack.Inside.newInterface
+--add-interface testPack.Inside.newInterface2
+--remove-class testPack.Inside.newClass2
+--remove-interface testPack.Inside.newInterface2
+
+--add-method testPack.Inside.newClass void public static void PerformInstructions(int instructionsList)
+--add-method testPack.Inside.newClass int public int PerformInstructions2(boolean x)
+--remove-method testPack.Inside.newClass.PerformInstructions2(boolean)
+--set-method-body testPack.Inside.newClass.PerformInstructions(int) C:\Users\michal\IdeaProjects\projectASM\target\body.txt
+--add-before-method testPack.Inside.newClass.PerformInstructions(int) C:\Users\michal\IdeaProjects\projectASM\target\addBefore.txt
+--add-after-method testPack.Inside.xClass.fcja() C:\Users\michal\IdeaProjects\projectASM\target\addAfter.txt
+--add-field testPack.Inside.xClass double qwerty = 10;
+--remove-field testPack.Inside.xClass qwerty
+--add-ctor testPack.Inside.xClass public xClass(boolean x, int a)
+--remove-ctor testPack.Inside.xClass(java.lang.String)
+--set-ctor-body testPack.Inside.xClass(boolean,int) C:\Users\michal\IdeaProjects\projectASM\target\ctorBody.txt
+--o ASMinterpeter_Michal_Jablonski-jar-with-dependencies_modified.jar 

@@ -1,0 +1,39 @@
+add-package testPack.Inside.addedPack
+remove-package 
+add-class testPack.Inside.nowaKlasa
+add-interface
+remove-class
+remove-interface
+add-method //tylko deklaracja metody, ciało w set-method-body
+remove-method
+set-method-body
+add-before-method
+add-after-method
+add-field
+remove-field
+add-ctor
+remove-ctor
+set-ctor-body
+
+
+
+--i C:\Users\michal\IdeaProjects\projectASM\target\ASMinterpeter_Michal_Jablonski-jar-with-dependencies.jar
+--add-class testPack.Inside.newClass
+--add-class testPack.Inside.newClass2
+--add-interface testPack.Inside.newInterface
+--add-interface testPack.Inside.newInterface2
+--remove-class testPack.Inside.newClass2
+--remove-interface testPack.Inside.newInterface2
+
+--add-method testPack.Inside.newClass void public static void PerformInstructions(int instructionsList)
+--add-method testPack.Inside.newClass int public int PerformInstructions2(boolean x)
+--remove-method testPack.Inside.newClass.PerformInstructions2(boolean)
+--set-method-body testPack.Inside.newClass.PerformInstructions(int) C:\Users\michal\Documents\studia\SEM5\JFK\javaTool\body.txt
+--add-before-method testPack.Inside.newClass.PerformInstructions(int) C:\Users\michal\Documents\studia\SEM5\JFK\javaTool\addBefore.txt
+--add-after-method testPack.Inside.xClass.fcja() C:\Users\michal\Documents\studia\SEM5\JFK\javaTool\addAfter.txt
+--add-field testPack.Inside.xClass double qwerty = 10;
+--remove-field testPack.Inside.xClass qwerty
+--add-ctor testPack.Inside.xClass public xClass(boolean x, int a)
+--remove-ctor testPack.Inside.xClass(java.lang.String)
+--set-ctor-body testPack.Inside.xClass(boolean,int) C:\Users\michal\Documents\studia\SEM5\JFK\javaTool\ctorBody.txt
+--o ASMinterpeter_Michal_Jablonski-jar-with-dependencies_modified.jar 
