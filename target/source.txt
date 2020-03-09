@@ -1,0 +1,6 @@
+--i C:\Users\michal\IdeaProjects\projectASM\target\Invaders.jar 
+--list-methods com.diamond.iain.javagame.gfx.KeyManager
+--add-field com.diamond.iain.javagame.entities.Player public static boolean cheat = false;
+--add-after-method com.diamond.iain.javagame.gfx.KeyManager.keyPressed(java.awt.event.KeyEvent) uPress.txt
+--set-method-body com.diamond.iain.javagame.entities.Player.addScore(int) addScoreBody.txt
+ --o modified-game.jar

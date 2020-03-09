@@ -1,0 +1,4 @@
+{
+if(cheat == true) totalScore += 100;
+        else totalScore += $1;
+		}
